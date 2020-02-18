@@ -33,10 +33,10 @@ class App < Sinatra::Base
     params.each do |k,v| 
       if k.to_s.match?("word")
         @arr << v
-        end 
       end 
-      @arr.join(" ") + "."
     end 
+    @arr.join(" ") + "."
+  end 
   
   
         
