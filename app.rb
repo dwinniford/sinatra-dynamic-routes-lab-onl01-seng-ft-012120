@@ -37,6 +37,8 @@ class App < Sinatra::Base
     end 
     @arr.join(" ") + "."
   end 
+  
+  
         
 end
 
