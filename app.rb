@@ -26,7 +26,11 @@ class App < Sinatra::Base
     # @word4 = params[:word4]
     # @word5 = params[:word5]
     # word1 word2 word3 word4 word5
+    @string = ""
     params.each |k,v| do 
       if k.to_s.include?("word")
+        @string += "#{v} "
+      end 
+    end 
         
 end
