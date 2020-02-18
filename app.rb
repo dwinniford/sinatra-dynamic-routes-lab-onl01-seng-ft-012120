@@ -21,7 +21,7 @@ class App < Sinatra::Base
     @phrase*@number
   end 
     
-  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+  get "/say/:word1/:word2/:word3/:word4/:word5" do 
     @string = ""
     binding.pry 
     params.each |k,v| do 
