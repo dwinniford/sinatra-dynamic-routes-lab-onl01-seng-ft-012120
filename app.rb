@@ -22,14 +22,14 @@ class App < Sinatra::Base
   end 
     
   get "/say/:word1/:word2/:word3/:word4/:word5" do 
-    @arr = []
-    binding.pry 
-    params.each |k,v| do 
-      if k.to_s.match?("word")
-        @arr << v
-      end 
-    end 
-    @arr.join(" ") 
+    # @arr = []
+    # binding.pry 
+    # params.each |k,v| do 
+    #   if k.to_s.match?("word")
+    #     @arr << v
+    #   end 
+    # end 
+    # @arr.join(" ") 
   end 
         
 end
