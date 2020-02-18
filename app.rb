@@ -22,7 +22,16 @@ class App < Sinatra::Base
   end 
     
   get "/say/:word1/:word2/:word3/:word4/:word5" do 
-    # @arr = []
+    @word1 = params[:word1]
+    # @word2 = params[:word2]
+    # @word3 = params[:word3]
+    # @word4 = params[:word4]
+    # @word5 = params[:word5]
+    # word1 word2 word3 word4 word5
+  end 
+        
+end
+ # @arr = []
     # binding.pry 
     # params.each |k,v| do 
     #   if k.to_s.match?("word")
@@ -30,14 +39,4 @@ class App < Sinatra::Base
     #   end 
     # end 
     # @arr.join(" ") 
-  end 
-        
-end
 
-
-# @word1 = params[:word1]
-  #   # @word2 = params[:word2]
-  #   # @word3 = params[:word3]
-  #   # @word4 = params[:word4]
-  #   # @word5 = params[:word5]
-  #   # word1 word2 word3 word4 word5
