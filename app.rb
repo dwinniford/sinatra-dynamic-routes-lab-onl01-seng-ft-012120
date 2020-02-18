@@ -20,13 +20,13 @@ class App < Sinatra::Base
   end 
     
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
-    
     @string = ""
     params.each |k,v| do 
       if k.to_s.include?("word")
         @string += "#{v} "
       end 
     end 
+    @string 
   end 
         
 end
