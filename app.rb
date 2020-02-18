@@ -22,21 +22,22 @@ class App < Sinatra::Base
   end 
     
   get "/say/:word1/:word2/:word3/:word4/:word5" do 
-    @word1 = params[:word1]
-    @word2 = params[:word2]
-    @word3 = params[:word3]
-    @word4 = params[:word4]
-    @word5 = params[:word5]
-    "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
+    # @word1 = params[:word1]
+    # @word2 = params[:word2]
+    # @word3 = params[:word3]
+    # @word4 = params[:word4]
+    # @word5 = params[:word5]
+    # "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
+      @arr = []
+    binding.pry 
+    params.each do |k,v| 
+      if k.to_s.match?("word")
+        @arr << v
+      end 
+    end 
+    @arr.join(" ") 
   end 
         
 end
- # @arr = []
-    # binding.pry 
-    # params.each |k,v| do 
-    #   if k.to_s.match?("word")
-    #     @arr << v
-    #   end 
-    # end 
-    # @arr.join(" ") 
+
 
