@@ -35,7 +35,7 @@ class App < Sinatra::Base
         @arr << v
       end 
     end 
-    @arr.join(" ") 
+    @arr.join(" ") + "."
   end 
         
 end
