@@ -28,7 +28,7 @@ class App < Sinatra::Base
     # @word4 = params[:word4]
     # @word5 = params[:word5]
     # "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
-      @arr = []
+    @arr = []
     
     params.each do |k,v| 
       if k.to_s.match?("word")
@@ -38,6 +38,7 @@ class App < Sinatra::Base
     @arr.join(" ") + "."
   end 
   
+  get 
   
         
 end
