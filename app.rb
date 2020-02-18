@@ -32,5 +32,6 @@ class App < Sinatra::Base
         @string += "#{v} "
       end 
     end 
+  end 
         
 end
