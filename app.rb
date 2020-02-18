@@ -1,5 +1,7 @@
 require_relative 'config/environment'
 
+require 'pry'
+
 class App < Sinatra::Base
   # Write your code here!
   
@@ -21,6 +23,7 @@ class App < Sinatra::Base
     
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
     @string = ""
+    binding.pry 
     params.each |k,v| do 
       if k.to_s.match?("word")
         @string += "#{v} "
